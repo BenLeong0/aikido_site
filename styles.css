@@ -13,6 +13,8 @@ body {
 :root {
     --red: #990000;
     --white: #FFFFFF;
+    --grey: #ececec;
+    --dark-grey: #bbbbbb;
     --black: #000000;
     --offblack: #404040;
 
@@ -36,12 +38,25 @@ body {
     --border-radius-medium: 10px;
   }
 
+.vertical-separation-medium {
+    margin-bottom: var(--vertical-spacing-medium);
+}
+
+.vertical-separation-large {
+    margin-bottom: var(--vertical-spacing-large);
+}
+
 .bold {
     font-weight: bold;
 }
 
 .underline {
     text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
 }
 
 .header {
@@ -55,6 +70,7 @@ body {
 
 #header-img-left {
     height: 116px;
+    z-index: 100;
 }
 
 .header-text {
@@ -63,6 +79,31 @@ body {
     color: var(--red);
     font-size: 30px;
 }
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.navbar {
+    width: 128px;
+    background-color: var(--grey);
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-links > a {
+    display: block;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.navbar-links > a:hover {
+    background-color: var(--dark-grey);
+}
+
 
 .footer {
     height: 80px;
