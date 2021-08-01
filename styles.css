@@ -219,10 +219,16 @@ margin-bottom: var(--vertical-spacing-medium);
         font-size: 20px;
     }
 
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
     .navbar-links > a {
         padding-right: 60px;
+        padding-bottom: 6px;
         font-size: 25px;
-        text-align: right;
     }
 
     .navbar-img {
@@ -252,8 +258,6 @@ margin-bottom: var(--vertical-spacing-medium);
 }
 
 .main-content {
-    padding: var(--vertical-spacing-extra-large);
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -261,7 +265,14 @@ margin-bottom: var(--vertical-spacing-medium);
 
 @media screen and (min-width: 1051px) {
     .main-content {
+        padding: var(--vertical-spacing-extra-large);
         margin-right: 128px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .main-content {
+        padding: var(--vertical-spacing-medium);
     }
 }
 
