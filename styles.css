@@ -296,7 +296,7 @@ margin-bottom: var(--vertical-spacing-small-medium);
 /* Footer */
 
 .footer {
-    height: 80px;
+    height: 60px;
     padding: 25px;
     display: flex;
     flex-direction: column;
