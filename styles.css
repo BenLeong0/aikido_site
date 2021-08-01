@@ -69,7 +69,10 @@ a {
 /* Spacing classes */
 
 .vertical-separation-medium {
-margin-bottom: var(--vertical-spacing-medium);
+    margin-bottom: var(--vertical-spacing-medium);
+}
+.vertical-separation-small-medium {
+margin-bottom: var(--vertical-spacing-small-medium);
 }
 .vertical-separation-medium-large {
     margin-bottom: var(--vertical-spacing-medium-large);
@@ -321,5 +324,25 @@ margin-bottom: var(--vertical-spacing-medium);
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+
+/* Main text */
+.main-text > img {
+    width: 400px;
+    max-width: 95%;
+}
+
+@media screen and (max-width: 1050px) {
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-text > img {
+        margin-bottom: var(--vertical-spacing-medium);
     }
 }
