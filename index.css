@@ -2,3 +2,7 @@
     display: flex;
     justify-content: center;
 }
+
+.home-img > img {
+    max-width: 100%;
+}
