@@ -15,6 +15,8 @@
     <meta property="og:description" content="Koshinkan Aikido Society is a friendy organisation based in Sutton, Surrey and affiliated to the U.K. Shinwakai and members of the British Aikido Board.">
     <meta property="og:image" content="assets\john_tony.jpg">
 
+    <script src="navbar.js"></script>
+
 </head>
 
 <body>
@@ -25,10 +27,10 @@
     </div>
     <div class="content-container">
         <div class="show-mobile navbar-spacer">
-            <div>Show links</div>
+            <div onclick="openNavbar()">Show links</div>
         </div>
-        <div class="navbar">
-            <div class="show-mobile navbar-closer bold title underline">
+        <div id="navbar">
+            <div onclick="closeNavbar()" class="show-mobile navbar-closer bold title underline">
                 Close links
             </div>
             <div class="navbar-links vertical-separation-large">
