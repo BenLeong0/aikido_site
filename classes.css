@@ -1,0 +1,39 @@
+.page-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-text {
+    margin-right: 40px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    max-width: 95%;
+}
+
+.image-container > img {
+    margin-bottom: var(--vertical-spacing-medium)
+}
+
+@media screen and (max-width: 1050px) {
+    .page-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .classes-content {
+        text-align: left;
+        max-width: 380px;
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
