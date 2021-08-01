@@ -17,8 +17,11 @@ p {
 
 a {
     color: var(--red);
+    text-decoration: none;
 }
 
+
+/* Global vars */
 :root {
     --red: #990000;
     --white: #FFFFFF;
@@ -45,32 +48,40 @@ a {
 
     --border-radius-small: 5px;
     --border-radius-medium: 10px;
-  }
-
-.vertical-separation-medium {
-    margin-bottom: var(--vertical-spacing-medium);
 }
 
+
+/* Spacing classes */
+
+.vertical-separation-medium {
+margin-bottom: var(--vertical-spacing-medium);
+}
 .vertical-separation-medium-large {
     margin-bottom: var(--vertical-spacing-medium-large);
 }
-
 .vertical-separation-large {
     margin-bottom: var(--vertical-spacing-large);
 }
 
-.bold {
-    font-weight: bold;
-}
 
-.underline {
-    text-decoration: underline;
-}
+/* Styling classes */
 
+.bold {font-weight: bold}
+.underline {text-decoration: underline}
 .center {
     text-align: center;
     justify-content: center;
 }
+
+
+/* Text colour classes */
+
+.white {color: var(--white)}
+.red {color: var(--red)}
+.black {color: var(--black)}
+
+
+/* Text types */
 
 .title {
     color: var(--red);
@@ -87,6 +98,9 @@ a {
 .body-text {
     font-size: 16px;
 }
+
+
+/* Header */
 
 .header {
     display: flex;
@@ -110,6 +124,9 @@ a {
     font-weight: bold;
     font-style: italic;
 }
+
+
+/* Page content */
 
 .content-container {
     display: flex;
@@ -145,6 +162,8 @@ a {
     justify-content: flex-start;
 }
 
+
+/* Footer */
 
 .footer {
     height: 80px;
