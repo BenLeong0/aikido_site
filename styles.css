@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
 
     display: flex;
     flex-direction: column;
@@ -99,6 +99,7 @@ margin-bottom: var(--vertical-spacing-small-medium);
 
 .bold {font-weight: bold}
 .underline {text-decoration: underline}
+.italic {font-style: italic;}
 .center {
     text-align: center;
     justify-content: center;
