@@ -286,6 +286,10 @@ margin-bottom: var(--vertical-spacing-small-medium);
     .main-content {
         padding: var(--vertical-spacing-medium);
     }
+
+    .main-text {
+        text-align: center;
+    }
 }
 
 
